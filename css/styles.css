@@ -1,0 +1,325 @@
+body {
+	margin-top: 60px;
+	margin-right: 0px;
+	font-family: helvetica;
+	background-color: rgb(96,95,95);
+}
+
+li {
+	float: right;
+}
+
+a {
+	display: block;
+	width: 150px;
+	color: rgb(255,255,255);
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgb(203,111,111);
+	text-decoration: none;
+}
+
+ul {
+	display: inline;
+	list-style-type: none;
+	margin: 60px;
+	padding: 0px;
+}
+
+.portfolio_hr {
+   display: block;
+   position: relative;
+   padding: 0;
+   margin: 8px auto;
+   height: 0;
+   width: 90%;
+   max-height: 0;
+   font-size: 1px;
+   line-height: 1;
+   clear: both;
+   border: none;
+   border-top: 1px solid #aaaaaa;
+   border-bottom: 1px solid #ffffff;
+}
+
+hr {
+   display: block;
+   position: relative;
+   padding: 0;
+   margin: 8px auto;
+   height: 0;
+   width: 90%;
+   max-height: 0;
+   font-size: 1px;
+   line-height: 1;
+   clear: both;
+   border: none;
+   border-top: 1px solid #aaaaaa;
+   border-bottom: 1px solid #ffffff;
+}
+
+h1 {
+	text-align: center;
+	color: rgb(255,255,255);
+}
+
+dt, dd {
+	display: block;
+	float: right;
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+dd {
+	width: 600px;
+	float: right;
+}
+
+dt {
+	font-style: italic;
+	font-weight:bold;
+	font-size: 18px;
+	text-align: right;
+	padding-right: 26px;
+	width: 150px;
+	float: left;
+	height: 100px;
+	border-right: 1px;
+
+}
+
+
+
+#cell_and_email {
+	margin-left: 50px;
+	font-size: 18px;
+	color: rgb(255,255,255);
+}
+
+#email {
+	margin-left: 50px;
+	font-size: 18px;
+	color: rgb(255,255,255);
+}
+
+#resume_body {
+	font: 16px;
+	line-height: 24px;
+}
+
+#resume_container {
+	width: 1000px;
+	margin: 30px;
+}
+
+#header_1 {
+	font-size: 50px;
+	font-weight: bold;
+	color: rgb(255,255,255);
+	margin-left: 50px;
+}
+
+#portfolio_header_1 {
+	font-size: 50px;
+	font-weight: bold;
+	color: rgb(255,255,255);
+	margin-left: 60px;
+}
+
+.portfolio_header_2 {
+	font-size: 35px;
+	color: rgb(255,255,255);
+	margin-left: 60px;
+}
+
+#objective {
+	font-size: 25px;
+	font-style: italic;
+	color: rgb(105,105,105);
+	margin-left: 100px;
+}
+
+.resume_ul {
+	float: left;
+}
+
+
+.header_2 {
+	margin-right: 16px;
+	font-size: 20px;
+	color: rgb(255,255,255);
+}
+
+
+.header_3 {
+	margin-right: 16px;
+	font-size: 16px;
+	color: rgb(190,190,190);
+}
+
+.header_4 {
+	margin-right: 16px;
+	font-size: 16px;
+	color: rgb(190,190,190);
+}
+
+.header_5 {
+	margin-right: 16px;
+	font-size: 20px;
+	color: rgb(255,255,255);
+	margin-bottom: -50px;
+
+}
+
+.header_2_resume {
+	float: left;
+}
+
+.dd_class {
+	float: left;
+	margin: 0;
+	clear: both;
+}
+
+.tel {
+	font-size: 16px;
+	color: rgb(255,255,255);
+	text-decoration: none;
+	font-family: helvetica;
+}
+
+#nav {
+	margin-top: 0px;
+}
+
+#helloText {
+	color: white;
+	margin-top: 175px;
+	margin-bottom:100px;
+	margin-right: 150px;
+	margin-left: 200px;
+	font-size: 50px;
+	font-weight: bold;
+
+}
+
+#introText {
+	color: white;
+	margin-top: 130px;
+	margin-left: 200px;
+	margin-right: 700px;
+	font-size: 28px;
+
+}
+
+#portfolioIntroduction {
+	color: white;
+	margin-top: 50px;
+	font-size: 35px;
+}
+
+
+#myWork {
+	color: white;
+}
+
+#aboutMeText {
+	color: white;
+}
+
+div.imageLayout {
+	float: left;
+	margin-bottom: 100px
+}
+
+div.photographs {
+	float: left;
+	margin-bottom: 10px;
+}
+div.row2imageLayout {
+	float: left;
+	margin-bottom: 100px;
+}
+
+#drawingPhoto {
+	width: 450px;
+	height: 500px;
+	position: absolute;
+	bottom: 0px;
+	right: 200px;
+}
+
+#allTheLittleLights {
+	width: 400px; 
+	height: 400px;
+	margin-right: 40px;
+}
+
+#mario {
+	width: 375px;
+	height: 375px;
+	margin-right: 40px;
+
+}
+
+#aquarium {
+	width: 400px;
+	height: 400px;
+	margin-right: 40px; 
+}
+
+#boat {
+	width: 420px;
+	height: 400px;
+	margin-left: -10px; 
+}
+
+#despicable_me {
+	width: 400px;
+	height: 400px;
+}
+
+#wreck_it_ralph {
+	width: 400px;
+	height: 400px;
+	margin-right: 40px;
+	margin-top: -20px;
+}
+
+#behind {
+	width: 390px;
+	height: 390px;
+}
+
+#leaf {
+	width: 430px;
+	height: 430px;
+	margin-left: 40px;
+}
+
+#boat_maine {
+	width: 410px;
+	height: 410px;
+	margin-left: 10px;
+}
+
+.italic_font {
+	position: relative;
+	bottom: 0;
+	right: 0;
+	font-style: italic;
+	font-family: helvetica;
+	font-size: 16px;
+	color: rgb(200, 200, 200);
+	font-weight: normal;
+}
+
+.resume_ul {
+	margin-bottom: 60px;
+	margin-left: 2px;
+}
+
+
+
