@@ -2,7 +2,9 @@ body {
 	margin-top: 60px;
 	margin-right: 0px;
 	font-family: "Open Sans"; 
-	background-color: rgb(96,95,95);
+	background-color: rgb(235,232,232);
+	font-size: 25px;
+	font-weight: bold;
 }
 
 li {
@@ -11,8 +13,8 @@ li {
 
 a {
 	display: block;
-	width: 150px;
-	color: rgb(255,255,255);
+	width: 200px;
+	color: rgb(0,0,0);
 	text-decoration: none;
 }
 
@@ -20,12 +22,17 @@ a:hover {
 	color: rgb(203,111,111);
 	text-decoration: none;
 }
-
 ul {
 	display: inline;
 	list-style-type: none;
 	margin: 60px;
 	padding: 0px;
+}
+
+#container {
+	background: rgb(0,0,0);
+	height: 8px;
+
 }
 
 .portfolio_hr {
@@ -190,9 +197,6 @@ dt {
 	font-family: helvetica;
 }
 
-#nav {
-	margin-top: 0px;
-}
 
 #helloText {
 	color: white;
@@ -321,5 +325,9 @@ div.row2imageLayout {
 	margin-left: 2px;
 }
 
+#logo {
+	font-size: 30px;
+	margin-left: 40px;
+}
 
 
