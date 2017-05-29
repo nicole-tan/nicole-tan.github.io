@@ -7,7 +7,6 @@
 		<title> Nicole Tan </title>
 		<link href="css/styles.css" type = "text/css" rel = "stylesheet" />
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-		 <script type="text/javascript" src="scripts/script.js"></script>
 	</head>
 
 	<body id = "background">
@@ -28,7 +27,7 @@
 			<p class = "right_card_text"> 2017 </p> 
 			<div class = "line_separator"> </div>
 			<div class = "image">
-				<img src = "images/felongeist_index.jpg" alt = "Screencap of our game Felongeist">
+				<img src = "images/felongeist_index.jpg" alt = "Screencap of our game Felongeist" id = "felongeist_image"/>
 				<h1> felongeist. </h1>
 				<h2> a puzzle and <br/> stealth game </h2>  
 			</div>
@@ -37,31 +36,45 @@
 		<div class = "card" id = "virtual_embodiment_lab_2"> 
 
 		</div> 
+
+		<script>
+			var tar; 
+			document.onmouseover = function(e) { tar = e.target.id }; 
+
+			var cardElts = document.querySelectorAll('.card');
+			for (var i=0; i < cardElts.length; i++) {
+				cardElts[i].addEventListener("mouseover", cardHover);
+				cardElts[i].addEventListener("mouseout", cardOut);
+			}
+
+			//only called for the class card
+			function cardHover() { 
+				// id = document.querySelector('.card').id; 
+				//checks id and spits out appropriate response
+				if (tar != null) {
+					if (tar == "felongeist_1") {
+						document.getElementById(tar).style.backgroundColor = "rgba(" + 0 + "," + 0 + "," + 0 + "," + 0.85 + ")";
+						document.getElementById("felongeist_image").style.opacity = "0.1";
+						// document.getElementById(id).style.opacity = "0.6"
+					}
+				}
+
+			}
+
+			function cardOut() { 
+				id = document.querySelector('.card').id; 
+				//checks id and spits out appropriate response
+				if (id == "felongeist_1") {
+					document.getElementById("felongeist_1").style.backgroundColor = "rgb(" + 188 + "," + 178 + "," + 178 + ")" ;
+					document.getElementById("felongeist_image").style.opacity = "1.0";
+				}
+
+			}
+
+	</script> 
 		
 
 	</body>	
 
-	<script>
-		var cardElts = document.querySelectorAll('.card');
 
-		console.log(cardElts);
-		for (var i=0; i < cardElts.length; i++) {
-			cardElts[i].addEventListener("mouseover", cardHover);
-
-		}
-
-		//only called for the class card
-		function cardHover() { 
-			id = document.querySelector('.card').id; 
-			//darkens the background 
-			//checks id and spits out appropriate response
-			if (id == "felongeist_1") {
-				console.log('look at me!');
-				document.getElementById("felongeist_1").style.backgroundColor = "rgb(" + 255 + "," + 255 + "," + 255 + ")" ;
-			}
-
-		}
-
-
-	</script> 
 </html>
