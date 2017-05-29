@@ -23,7 +23,7 @@
 
 		<div id = "nav_bar_line"> </div>
 
-		<div class = "card" id = "felongeist_1" onmouseover = "cardHover(felongeist_1)"> 
+		<div class = "card" id = "felongeist_1">
 			<p class = "left_card_text"> intro to game architecture. </p>
 			<p class = "right_card_text"> 2017 </p> 
 			<div class = "line_separator"> </div>
@@ -40,4 +40,28 @@
 		
 
 	</body>	
+
+	<script>
+		var cardElts = document.querySelectorAll('.card');
+
+		console.log(cardElts);
+		for (var i=0; i < cardElts.length; i++) {
+			cardElts[i].addEventListener("mouseover", cardHover);
+
+		}
+
+		//only called for the class card
+		function cardHover() { 
+			id = document.querySelector('.card').id; 
+			//darkens the background 
+			//checks id and spits out appropriate response
+			if (id == "felongeist_1") {
+				console.log('look at me!');
+				document.getElementById("felongeist_1").style.backgroundColor = "rgb(" + 255 + "," + 255 + "," + 255 + ")" ;
+			}
+
+		}
+
+
+	</script> 
 </html>
