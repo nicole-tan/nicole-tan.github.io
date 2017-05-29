@@ -51,9 +51,31 @@ ul {
 	box-shadow: 10px 10px 5px #888888;
 }
 
-#felongeist_1 {
-	margin-top:20px;
+.line_separator{
+	height:2px;
+	background: rgb(0,0,0);
+	border-bottom:1px solid #313030;
+	position: relative;
+	margin-top: 45px;
+	width: 94%;
+	margin-left: 15px;
 }
+
+img.desaturate {
+	filter: grayscale(100%);
+}
+
+img {
+	max-width: 50%;
+	margin-top: 40px;
+	margin-left: 250px;
+}
+
+#felongeist_1 {
+	margin-top:50px;
+	margin-left: 100px;
+}
+
 
 
 
