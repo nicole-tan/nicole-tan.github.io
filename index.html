@@ -23,13 +23,15 @@
 		<div id = "nav_bar_line"> </div>
 
 		<div class = "card" id = "felongeist_1">
-			<p class = "left_card_text"> intro to game architecture. </p>
-			<p class = "right_card_text"> 2017 </p> 
-			<div class = "line_separator"> </div>
+			<div class = "felongeist_hidden">
+				<p class = "left_card_text"> intro to game architecture. </p>
+				<p class = "right_card_text"> 2017 </p> 
+				<div class = "line_separator"> </div>
+			</div> 
 			<div class = "image">
 				<img src = "images/felongeist_index.jpg" alt = "Screencap of our game Felongeist" id = "felongeist_image"/>
-				<h1> felongeist. </h1>
-				<h2> a puzzle and <br/> stealth game </h2>  
+				<h1 id = "felongeist_h1"> felongeist. </h1>
+				<h2 id = "felongeist_h2" class = "felongeist_hidden"> a puzzle and <br/> stealth game </h2>  
 			</div>
 		</div> 
 
@@ -55,7 +57,12 @@
 					if (tar == "felongeist_1") {
 						document.getElementById(tar).style.backgroundColor = "rgba(" + 0 + "," + 0 + "," + 0 + "," + 0.85 + ")";
 						document.getElementById("felongeist_image").style.opacity = "0.1";
-						// document.getElementById(id).style.opacity = "0.6"
+						document.getElementById("felongeist_h1").style.color = "white";
+						felongeist_hidden = document.getElementsByClassName("felongeist_hidden"); 
+						for (var i = 0; i<felongeist_hidden.length; i++) {
+							felongeist_hidden[i].style.visibility = "hidden";
+						}
+
 					}
 				}
 
@@ -67,6 +74,11 @@
 				if (id == "felongeist_1") {
 					document.getElementById("felongeist_1").style.backgroundColor = "rgb(" + 188 + "," + 178 + "," + 178 + ")" ;
 					document.getElementById("felongeist_image").style.opacity = "1.0";
+					document.getElementById("felongeist_h1").style.color = "black";
+					felongeist_hidden = document.getElementsByClassName("felongeist_hidden"); 
+					for (var i = 0; i<felongeist_hidden.length; i++) {
+						felongeist_hidden[i].style.visibility = "visible";
+					}
 				}
 
 			}
