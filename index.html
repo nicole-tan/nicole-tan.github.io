@@ -29,7 +29,7 @@
 				<div class = "line_separator"> </div>
 			</div> 
 			<div class = "image">
-				<img src = "images/felongeist_index.jpg" alt = "Screencap of our game Felongeist" id = "felongeist_image"/>
+				<img src = "images/felongeist_index.jpg" alt = "Screencap of our game Felongeist" id = "felongeist_image" class = "felongeist_hidden"/>		
 				<h1 id = "felongeist_h1"> felongeist. </h1>
 				<h2 id = "felongeist_h2" class = "felongeist_hidden"> a puzzle and <br/> stealth game </h2>  
 			</div>
@@ -41,7 +41,10 @@
 
 		<script>
 			var tar; 
+			var clicked; 
 			document.onmouseover = function(e) { tar = e.target.id }; 
+
+
 
 			var cardElts = document.querySelectorAll('.card');
 			for (var i=0; i < cardElts.length; i++) {
@@ -56,16 +59,17 @@
 				if (tar != null) {
 					if (tar == "felongeist_1") {
 						document.getElementById(tar).style.backgroundColor = "rgba(" + 0 + "," + 0 + "," + 0 + "," + 0.85 + ")";
-						document.getElementById("felongeist_image").style.opacity = "0.1";
+						// document.getElementById(tar).style.backgroundImage = "url(images/felongeist.jpg)";
 						document.getElementById("felongeist_h1").style.color = "white";
+						document.getElementById("felongeist_h1").style.left = 150 + "px";
+						document.getElementById("felongeist_h1").style.top = 60 + "px";
+
 						felongeist_hidden = document.getElementsByClassName("felongeist_hidden"); 
 						for (var i = 0; i<felongeist_hidden.length; i++) {
 							felongeist_hidden[i].style.visibility = "hidden";
 						}
-
 					}
 				}
-
 			}
 
 			function cardOut() { 
@@ -75,6 +79,9 @@
 					document.getElementById("felongeist_1").style.backgroundColor = "rgb(" + 188 + "," + 178 + "," + 178 + ")" ;
 					document.getElementById("felongeist_image").style.opacity = "1.0";
 					document.getElementById("felongeist_h1").style.color = "black";
+					document.getElementById("felongeist_h1").style.left = 40 + "px";
+					document.getElementById("felongeist_h1").style.top = 25 + "px";
+
 					felongeist_hidden = document.getElementsByClassName("felongeist_hidden"); 
 					for (var i = 0; i<felongeist_hidden.length; i++) {
 						felongeist_hidden[i].style.visibility = "visible";
@@ -83,6 +90,10 @@
 
 			}
 
+			//when card is clicked, go to corresponding project site 
+			document.getElementById("felongeist_1").onclick = function() {
+				location.href = "files/felongeist.html";
+			}
 	</script> 
 		
 
