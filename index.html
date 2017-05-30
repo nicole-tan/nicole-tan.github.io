@@ -22,7 +22,7 @@
 
 		<div id = "nav_bar_line"> </div>
 
-		<div class = "card" id = "felongeist_1">
+		<div class = "card" id = "felongeist_1" onmouseover = "cardHover('felongeist_1')" onmouseout = "cardOut('felongeist_1')">
 			<div class = "felongeist_hidden">
 				<p class = "left_card_text"> intro to game architecture. </p>
 				<p class = "right_card_text"> 2017 </p> 
@@ -40,40 +40,26 @@
 		</div> 
 
 		<script>
-			var tar; 
-			var clicked; 
-			document.onmouseover = function(e) { tar = e.target.id }; 
-
-			var cardElts = document.querySelectorAll('.card');
-			for (var i=0; i < cardElts.length; i++) {
-				cardElts[i].addEventListener("mouseover", cardHover);
-				cardElts[i].addEventListener("mouseout", cardOut);
-			}
-
 			//only called for the class card
-			function cardHover() { 
-				// id = document.querySelector('.card').id; 
+			function cardHover(id) { 
 				//checks id and spits out appropriate response
-				if (tar != null) {
-					if (tar == "felongeist_1") {
-						document.getElementById(tar).style.backgroundColor = "rgba(" + 0 + "," + 0 + "," + 0 + "," + 0.85 + ")";
-						// document.getElementById(tar).style.backgroundImage = "url(images/felongeist.jpg)";
-						document.getElementById("felongeist_h1").style.color = "white";
-						document.getElementById("felongeist_h1").style.left = 130 + "px";
-						document.getElementById("felongeist_h1").style.top = 55 + "px";
-						document.getElementById("felongeist_h1").style.padding = 10 + "px";
-						document.getElementById("felongeist_h1").style.border = 5 + "px" + " solid" + " #ffffff"; 
+				if (id == "felongeist_1") {
+					document.getElementById(id).style.backgroundColor = "rgba(" + 0 + "," + 0 + "," + 0 + "," + 0.85 + ")";
+					// document.getElementById(tar).style.backgroundImage = "url(images/felongeist.jpg)";
+					document.getElementById("felongeist_h1").style.color = "white";
+					document.getElementById("felongeist_h1").style.left = 130 + "px";
+					document.getElementById("felongeist_h1").style.top = 55 + "px";
+					document.getElementById("felongeist_h1").style.padding = 10 + "px";
+					document.getElementById("felongeist_h1").style.border = 5 + "px" + " solid" + " #ffffff"; 
 
-						felongeist_hidden = document.getElementsByClassName("felongeist_hidden"); 
-						for (var i = 0; i<felongeist_hidden.length; i++) {
-							felongeist_hidden[i].style.visibility = "hidden";
-						}
+					felongeist_hidden = document.getElementsByClassName("felongeist_hidden"); 
+					for (var i = 0; i<felongeist_hidden.length; i++) {
+						felongeist_hidden[i].style.visibility = "hidden";
 					}
 				}
 			}
 
-			function cardOut() { 
-				id = document.querySelector('.card').id; 
+			function cardOut(id) { 
 				//checks id and spits out appropriate response
 				if (id == "felongeist_1") {
 					document.getElementById("felongeist_1").style.backgroundColor = "rgb(" + 188 + "," + 178 + "," + 178 + ")" ;
@@ -81,6 +67,7 @@
 					document.getElementById("felongeist_h1").style.color = "black";
 					document.getElementById("felongeist_h1").style.left = 40 + "px";
 					document.getElementById("felongeist_h1").style.top = 25 + "px";
+					document.getElementById("felongeist_h1").style.padding = 0 + "px";
 
 					document.getElementById("felongeist_h1").style.border = 0 + "px" + " solid" + " #ffffff"; 
 
@@ -96,6 +83,7 @@
 			document.getElementById("felongeist_1").onclick = function() {
 				location.href = "files/felongeist.html";
 			}
+
 	</script> 
 		
 
